@@ -12,6 +12,9 @@ cache:
   directories:
     - $HOME/.composer/cache
 
+before_install:
+  - rm composer.lock
+
 install:
   - composer install --prefer-dist --no-interaction
 
